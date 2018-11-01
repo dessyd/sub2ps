@@ -1,0 +1,31 @@
+!title, Unknown Subsector
+!sub,Example Subsector--Nowhere-F
+!! all right, none of the names here are too creative.
+!! but they might come after me if I used their Word Generator tables.
+!adj,t,Universe
+!adj,b,Constellation
+!adj,l,Unseen
+!adj,r,Undocumented
+Pearl Harbor,1012,c7a4544-9 s g401im,Fl Ni
+!! note that the program is case-insensitive as far as the UPP.
+!! also, the worlds don't HAVE to be in any order, but it's easier that way.
+Wetlands, 1014,e63a9ae-9 x g112im,Hi In Wa
+Sahara,1015,b7b0873-7 m g704im,De
+Horn of Plenty,1016,b4647b9-9 n g500im,Ag
+Hellgate,1112,x231534-4 x a513bG,Ni Po
+Empty Lands,1117,e476224-5 x g414im,Lo Ni
+Growworld,1214,c667534-8 s g902im,Ag Ni
+Unreal,1215,a568458-c b g500im,Ni Cp
+Storm,1217,c6a3377-7 s g004im,Fl Lo Ni
+Broken Worlds,1511,b000411-b x a220bG,As
+Tribal,1519,x659664-2 x r000na,Ni
+March,1616,c5469aa-8 g g501im,Hi In
+Highwater,1617,e74a9c8-a x g702im,Hi In Wa
+!bord,t2,bnbnjujujnjujuju
+!bord,b6,uyuyujnjn
+!xboat,1010,1012,1014,1215,1016
+!xboat,1215,1617,1616
+!xboat,1617,1818
+!! please note that if any names in this file are copyrighted or
+!! otherwise protected, their use here was purely unintentional.
+

@@ -1,0 +1,118 @@
+    outbord stroke
+    outc
+    gridUL moveto
+    1 setlinewidth
+    gridUL exch pop trheight sub trheight -2 mul
+    trheight 20 mul gridUL exch pop exch sub
+    {dup gridUL pop exch moveto dohexrow} for
+    gridUL 21 trheight mul sub moveto
+    hexside 2 div trheight rlineto stroke
+    gridUL pop hexside 2 div add gridUL exch pop moveto
+    0 trheight -20 mul rmoveto
+    4 {flat drawbottom} repeat stroke
+    /Helvetica-Oblique findfont 7 scalefont setfont
+3.5 inch 10 sub 3.1 inch moveto
+3 setlinewidth
+12.5 hexside mul 20 add 0 rlineto
+0 -2.75 inch rlineto
+-12.5 hexside mul 20 sub 0 rlineto
+closepath 1 4 div setgray stroke
+currentfont /Times-Roman findfont 12 scalefont setfont
+3.5 inch 6.25 hexside mul add 2.9 inch moveto 0 setgray
+(LEGEND) dup stringwidth exch -2 div exch rmoveto show setfont
+.5 setgray 4 setlinewidth 3 13 ccoord moveto 2 12 ccoord lineto stroke 0 setgray
+1 setlinewidth
+gridUL 24 trheight mul sub exch hexside 1.5 mul add exch moveto
+hexside 2 div trheight rlineto hexside 0 rlineto hexside 2 div trheight neg rlineto
+hexside -2 div trheight neg rlineto hexside neg 0 rlineto closepath stroke
+
+gridUL 24 trheight mul sub exch 9 hexside mul add exch 2 copy moveto
+hexside 2 div trheight rlineto hexside 0 rlineto hexside 2 div trheight neg rlineto
+hexside -2 div trheight neg rlineto hexside neg 0 rlineto closepath stroke
+2 trheight mul sub (ujuj) borderdraw 1 setlinewidth
+
+
+2 12 ccoord 2 copy moveto currentfont /Helvetica findfont 7 scalefont setfont
+% Put sample worlds here.
+gsave 0 trheight -22 mul translate (Primus) 2601 (A550111-F G G111) world pop pop
+2 1 ccoord moveto (00) stringwidth pop neg 14 rmoveto
+1 setgray (2601) show 0 setgray
+0 trheight translate (Quintus) 2322 (X000000-E X R000) world pop pop grestore
+setfont 2 copy moveto -14 12 rmoveto -9 6 rlineto currentpoint stroke moveto -2 2 rmoveto
+(Bases) dup stringwidth pop -3 div 2 mul 0 rmoveto show
+2 copy moveto 0 12 rmoveto 0 13 rlineto 0 2 rmoveto currentpoint stroke moveto
+(Starport Type) cprint
+2 copy moveto 13 11 rmoveto 20 7 rlineto currentpoint stroke 2 add moveto
+(Gas Giant) dup stringwidth pop -3 div 0 rmoveto show
+2 copy moveto -4 -2 rmoveto -30 -10 rlineto 0 -6 rmoveto currentpoint stroke
+moveto (World Type) dup stringwidth pop -3 div 2 mul 0 rmoveto show
+2 copy moveto 0 -12 rmoveto 0 -15 rlineto 0 -8 rmoveto currentpoint stroke moveto
+(World Name) cprint
+3 13 ccoord 3 add moveto
+0 setgray 1 setlinewidth (XBoat Route) dup stringwidth pop -2 div -8 rmoveto show
+7 12.5 ccoord 2 copy moveto -55 1.2 trheight mul rmoveto (Travel Zone) show
+2 copy moveto -55 1.2 trheight mul 7 sub rmoveto (Code (Red)) show
+ moveto 10 trheight 3 add rmoveto (No Gas Giant) show
+7 12.5 ccoord trheight 3 sub add moveto 0 12 rlineto 0 2 rmoveto currentpoint stroke moveto
+(Hex Number) cprint
+7 12.5 ccoord moveto hexside 2 div trheight neg 2 copy rmoveto rlineto stroke
+6 12.5 ccoord 2 copy moveto 20 trheight -2 div rlineto stroke
+moveto (border) dup stringwidth pop -2 div 2 rmoveto show
+    /Helvetica findfont 7 scalefont setfont
+3.5 inch 6.25 hexside mul add 2.6 inch 2 copy moveto (BASES) cprint
+3 sub 2 copy moveto -15 0 rmoveto 30 0 rlineto stroke
+10 sub exch 25 sub exch 2 copy moveto drawstar
+2 copy exch 10 add exch moveto (Naval Base) show
+10 sub 2 copy moveto true drawtri
+2 copy exch 10 add exch moveto (Scout Base) show
+10 sub 2 copy moveto false drawtri
+2 copy exch 10 add exch moveto (Scout Way Station) show
+6 sub 2 copy moveto true drawarmy
+4 sub 2 copy exch 10 add exch moveto (Military Base) show
+6 sub 2 copy moveto false drawarmy
+4 sub 2 copy exch 10 add exch moveto (Military Garrison) show
+5 sub 2 copy exch 2 sub exch moveto drawvargr
+5 sub 2 copy exch 10 add exch moveto (Vargr Corsair Base) show
+5 sub 2 copy exch 2 sub exch moveto drawzho
+5 sub exch 10 add exch moveto (Zhodani Base) show
+
+3.5 inch 6.25 hexside mul add 1.3 inch 2 copy moveto (TRAVEL ZONES) cprint
+3 sub 2 copy moveto -20 0 rmoveto 40 0 rlineto stroke
+3 sub exch 12 sub exch 2 copy moveto
+2 copy trheight 2 sub sub 2 copy moveto trheight 2 sub 2 sqrt div dup neg exch rmoveto
+trheight 2 sub 135 45 arcn 5 0 rmoveto (Red) show stroke
+[5] 0 setdash
+12 sub 2 copy trheight 2 sub sub trheight 2 sub 135 45 arcn 5 0 rmoveto (Amber) show stroke
+[] 0 setdash pop pop
+
+2 13 ccoord 15 sub 2 copy moveto (WORLD TYPE) cprint
+3 sub 2 copy moveto -15 0 rmoveto 30 0 rlineto stroke
+10 sub exch 30 sub exch 2 copy moveto 2 copy 3 add 3 -90 270 arc currentpoint closepath fill
+ moveto 10 0 rmoveto (Water Present) show stroke
+10 sub 2 copy moveto 2 copy 3 add 3 -90 270 arc currentpoint stroke moveto
+10 0 rmoveto (No Water Present) show stroke
+10 sub 2 copy 3 add moveto -3 -3 rmoveto 6 6 rlineto 0 -6 rmoveto -6 6 rlineto stroke
+moveto 10 0 rmoveto (Asteroid Belt) show
+
+7 13.5 ccoord 15 sub 2 copy moveto (STARPORT TYPE) cprint
+3 sub 2 copy moveto -20 0 rmoveto 40 0 rlineto stroke
+exch 40 sub exch 
+10 sub 2 copy moveto (A) show
+currentpoint exch pop 2 index 12 add exch moveto (Excellent Quality Installation.) show
+10 sub 2 copy moveto (B) show
+currentpoint exch pop 2 index 12 add exch moveto (Good Quality Installation.) show
+10 sub 2 copy moveto (C) show
+currentpoint exch pop 2 index 12 add exch moveto (Routine Quality Installation.) show
+10 sub 2 copy moveto (D) show
+currentpoint exch pop 2 index 12 add exch moveto (Poor Quality Installation.) show
+10 sub 2 copy moveto (E) show
+currentpoint exch pop 2 index 12 add exch moveto (Frontier Installation.) show
+10 sub 2 copy moveto (X) show
+currentpoint exch pop 2 index 12 add exch moveto (No Starport.) show
+clear
+gridUL moveto -25 10 rmoveto currentpoint .5 setgray 3 setlinewidth
+dup .2 inch exch lineto .2 inch .35 inch lineto 1 index .35 inch lineto closepath stroke
+2 copy moveto 1 index .2 inch sub -2 div -16 rmoveto 0 setgray
+currentfont /Times-Bold findfont 16 scalefont setfont (HOMEWORLD DATA) cprint setfont
+2 copy moveto 0 -20 rmoveto .2 inch exch 20 sub dup /pos exch def 
+lineto .5 setgray stroke 0 setgray pop
